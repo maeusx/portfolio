@@ -110,7 +110,7 @@ grid-template-columns: 180px auto auto 180px;
 .card:nth-child(6) {
     grid-area: f;
     animation-delay: calc(6 * var(--stagger-delay));
-    order: 9;
+    order: 10;
 }
 
 .card:nth-child(7) {
@@ -122,7 +122,8 @@ grid-template-columns: 180px auto auto 180px;
 .card:nth-child(8) {
     grid-area: h;
     animation-delay: calc(8 * var(--stagger-delay));
-    order: 10;
+    background: rgb(69,59,124);
+    order: 9;
 }
 
 .card:nth-child(9) {
@@ -177,7 +178,8 @@ grid-template-columns: 180px auto auto 180px;
     font-size: 3rem;
 }
 
-.hive {
+.hive,
+.paula {
     width: 35%;
     transform: translateX(90%);
 }
@@ -195,6 +197,9 @@ grid-template-columns: 180px auto auto 180px;
 }
 
 @media (max-width: 740px) {
+    a {
+        padding: 0 50%;
+    }
     .animated-grid {
         height: 85vh;
         display: flex;
@@ -221,6 +226,10 @@ grid-template-columns: 180px auto auto 180px;
     }
     .ancaf {
         width: 100px;
+        height: auto;
+    }
+    .paula {
+        width: 80px;
         height: auto;
     }
 }
